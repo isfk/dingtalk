@@ -7,7 +7,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://git.isfk.cn/actions/dingtalk@v1.0
+        uses: https://git.isfk.cn/actions/dingtalk@v1.2
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
