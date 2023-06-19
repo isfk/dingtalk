@@ -1,0 +1,51 @@
+name: "dingtalk-with-js"
+description: "A Github Action for Dingtalk Robot Messages"
+author: "isfk <sfk@live.cn>"
+inputs:
+  access_token:
+    description: "webhook access token"
+    required: true
+  secret:
+    description: "webhook secret"
+    required: true
+  msg_type:
+    description: "msg type, default:text. text/link/markdown/actionCard/feedCard"
+    required: true
+    default: "text"
+  atMobiles:
+    description: "atMobiles"
+    required: false
+  atUserIds:
+    description: "atUserIds"
+  isAtAll:
+    description: "isAtAll"
+  title:
+    description: "title"
+  content:
+    description: "content"
+  text:
+    description: "text"
+  picUrl:
+    description: "picUrl"
+  messageUrl:
+    description: "messageUrl"
+  btnOrientation:
+    description: "btnOrientation"
+  singleTitle:
+    description: "singleTitle"
+  singleURL:
+    description: "singleURL"
+  btns:
+    description: "btns"
+  links:
+    description: "links"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
+outputs:
+  result:
+    description: "DingTalk Message Result"
+branding:
+  icon: "award"
+  color: "green"
