@@ -1,4 +1,4 @@
-name: "dingtalk-with-js"
+name: "DingTalk JavaScript"
 description: "A Github Action for Dingtalk Robot Messages"
 author: "isfk <sfk@live.cn>"
 inputs:
