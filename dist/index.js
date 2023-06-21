@@ -4318,7 +4318,7 @@ run().then((data) => {
         (0,core.setFailed)(`❌ [ERROR] ${data}`);
     }
 }).catch((error) => {
-    error(`error ${error.message}`);
+    (0,core.notice)(`error ${error.message}`);
     (0,core.info)(`✅ [DONE], but robot send failed.`);
 });
 

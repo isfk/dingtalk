@@ -1,4 +1,4 @@
-import { getInput, setFailed, info } from "@actions/core";
+import { getInput, setFailed, info, notice } from "@actions/core";
 import hmacSHA256 from "crypto-js/hmac-sha256";
 import Base64 from 'crypto-js/enc-base64';
 
@@ -45,6 +45,6 @@ run().then((data) => {
         setFailed(`❌ [ERROR] ${data}`)
     }
 },).catch((error) => {
-    error(`error ${error.message}`)
+    notice(`error ${error.message}`)
     info(`✅ [DONE], but robot send failed.`)
 })
