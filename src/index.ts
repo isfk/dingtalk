@@ -45,5 +45,6 @@ run().then((data) => {
         setFailed(`❌ [ERROR] ${data}`)
     }
 },).catch((error) => {
-    setFailed(`❌ [ERROR] ${error.message}`)
+    error(`error ${error.message}`)
+    info(`✅ [DONE], but robot send failed.`)
 })
