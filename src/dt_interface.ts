@@ -22,6 +22,7 @@ interface MarkdownMessage {
 interface ActionCardMessage {
     msgtype?: string,
     actionCard?: actionCardParam,
+    at?: atParam,
 }
 
 // FeedCard type
