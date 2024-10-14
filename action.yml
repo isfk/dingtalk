@@ -2,13 +2,13 @@ name: "DingTalk JavaScript"
 description: "A Github Action for Dingtalk Robot Messages"
 author: "isfk <sfk@live.cn>"
 inputs:
-  access_token:
+  accessToken:
     description: "webhook access token"
     required: true
   secret:
     description: "webhook secret"
     required: true
-  msg_type:
+  msgType:
     description: "msg type, default:text. text/link/markdown/actionCard/feedCard"
     required: true
     default: "text"

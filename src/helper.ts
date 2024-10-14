@@ -53,6 +53,11 @@ const getBodyString = (): string => {
                 markdown: {
                     title: getInput('title'),
                     text: getInput('text'),
+                },
+                at: {
+                    atMobiles: getInput('atMobiles').split(","),
+                    atUserIds: getInput('atUserIds').split(","),
+                    isAtAll: getBooleanInput('isAtAll'),
                 }
             }
             res = JSON.stringify(markdownBody).toString()
@@ -68,6 +73,11 @@ const getBodyString = (): string => {
                     singleTitle: getInput('singleTitle'),
                     singleURL: getInput('singleURL'),
                     btns: parseBtns(getInput('btns')),
+                },
+                at: {
+                    atMobiles: getInput('atMobiles').split(","),
+                    atUserIds: getInput('atUserIds').split(","),
+                    isAtAll: getBooleanInput('isAtAll'),
                 }
             }
             res = JSON.stringify(actionCardBody).toString()

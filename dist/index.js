@@ -4232,6 +4232,11 @@ const getBodyString = () => {
                 markdown: {
                     title: (0,core.getInput)('title'),
                     text: (0,core.getInput)('text'),
+                },
+                at: {
+                    atMobiles: (0,core.getInput)('atMobiles').split(","),
+                    atUserIds: (0,core.getInput)('atUserIds').split(","),
+                    isAtAll: (0,core.getBooleanInput)('isAtAll'),
                 }
             };
             res = JSON.stringify(markdownBody).toString();
@@ -4246,6 +4251,11 @@ const getBodyString = () => {
                     singleTitle: (0,core.getInput)('singleTitle'),
                     singleURL: (0,core.getInput)('singleURL'),
                     btns: parseBtns((0,core.getInput)('btns')),
+                },
+                at: {
+                    atMobiles: (0,core.getInput)('atMobiles').split(","),
+                    atUserIds: (0,core.getInput)('atUserIds').split(","),
+                    isAtAll: (0,core.getBooleanInput)('isAtAll'),
                 }
             };
             res = JSON.stringify(actionCardBody).toString();

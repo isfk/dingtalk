@@ -72,6 +72,9 @@ jobs:
           msgType: "markdown"
           title: "this is title"
           text: "## this is content \n ### content.... ${{ github.sha }}"
+          atMobiles: 13800138001,13800138000
+          atUserIds: 13800138001,13800138000
+          isAtAll: false
       - name: Result
         run: echo "🍏 This job's status is ${{ job.status }}."
 ```
@@ -101,6 +104,9 @@ jobs:
           singleTitle: singleTitle
           singleURL: https://github.com
           # btns: '[{ "title": "isfk", "actionURL": "https://isfk.cn" }, { "title": "github", "actionURL": "https://github.com" }]'
+          atMobiles: 13800138001,13800138000
+          atUserIds: 13800138001,13800138000
+          isAtAll: false
       - name: Result
         run: echo "🍏 This job's status is ${{ job.status }}."
 ```
