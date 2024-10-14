@@ -14,7 +14,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://github.com/isfk/dingtalk@v2.2
+        uses: https://github.com/isfk/dingtalk@v2.4
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
@@ -40,7 +40,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://github.com/isfk/dingtalk@v2.2
+        uses: https://github.com/isfk/dingtalk@v2.4
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
@@ -65,7 +65,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://github.com/isfk/dingtalk@v2.2
+        uses: https://github.com/isfk/dingtalk@v2.4
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
@@ -94,7 +94,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://github.com/isfk/dingtalk@v2.2
+        uses: https://github.com/isfk/dingtalk@v2.4
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
@@ -125,7 +125,7 @@ jobs:
     runs-on: node-latest
     steps:
       - name: dingtalk
-        uses: https://github.com/isfk/dingtalk@v2.2
+        uses: https://github.com/isfk/dingtalk@v2.4
         with:
           accessToken: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
           secret: ${{ secrets.DINGTALK_SECRET }}
